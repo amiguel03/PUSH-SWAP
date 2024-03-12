@@ -6,7 +6,7 @@
 #    By: amiguel- <amiguel-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/30 14:15:28 by amiguel-          #+#    #+#              #
-#    Updated: 2024/03/11 14:58:29 by amiguel-         ###   ########.fr        #
+#    Updated: 2024/03/12 12:50:55 by amiguel-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,10 +16,11 @@ NAME = push_swap
 SRC_DIR		=	src/
 
 SRC_FILES	=	main.c \
-				error.c \
+				functions.c \
+				functions2.c \
 				parsing.c \
 				ft_split.c \
-				ft_isdigit.c \
+			
 				
 SRC			=	$(addprefix $(SRC_DIR), $(SRC_FILES))
 
