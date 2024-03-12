@@ -6,16 +6,22 @@
 /*   By: amiguel- <amiguel-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/07 16:11:43 by amiguel-          #+#    #+#             */
-/*   Updated: 2024/03/11 15:25:01 by amiguel-         ###   ########.fr       */
+/*   Updated: 2024/03/12 11:44:58 by amiguel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/push_swap.h"
 
+void	ft_error(void)
+{
+	write (2, "Error \n", 7);
+	exit(EXIT_FAILURE);
+}
+
 int	main(int argc, char **argv)
 {
-	t_lista	*stack_a;
-	t_lista	*stack_b;
+	t_list	*stack_a;
+	t_list	*stack_b;
 	char	 **nb;
 	int x;
 	int i = 1;
