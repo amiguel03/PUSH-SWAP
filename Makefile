@@ -6,7 +6,7 @@
 #    By: amiguel- <amiguel-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/30 14:15:28 by amiguel-          #+#    #+#              #
-#    Updated: 2024/03/14 12:37:47 by amiguel-         ###   ########.fr        #
+#    Updated: 2024/03/14 15:12:28 by amiguel-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,6 @@ SRC_FILES	=	main.c \
 				functions.c \
 				hardcode2.c \
 				functions2.c \
-				radix.c \
 			
 				
 SRC			=	$(addprefix $(SRC_DIR), $(SRC_FILES))

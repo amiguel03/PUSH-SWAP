@@ -6,7 +6,7 @@
 /*   By: amiguel- <amiguel-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/12 14:20:45 by amiguel-          #+#    #+#             */
-/*   Updated: 2024/03/12 15:02:22 by amiguel-         ###   ########.fr       */
+/*   Updated: 2024/03/14 15:10:01 by amiguel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ void	ft_reverse(t_list **stack, char *str)
 	current = *stack;
 	while (current->next != NULL)
 		current = current->next;
-	temp = current->next;
+	temp = current->content;
 	current = *stack;
 	while (current->next != NULL)
 	{

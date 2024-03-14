@@ -6,7 +6,7 @@
 /*   By: amiguel- <amiguel-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/07 16:05:36 by amiguel-          #+#    #+#             */
-/*   Updated: 2024/03/14 12:37:59 by amiguel-         ###   ########.fr       */
+/*   Updated: 2024/03/14 15:03:02 by amiguel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,5 +52,6 @@ void	ft_sethree(t_list **stack, t_num *num);
 void	ft_setfour(t_list **stack, t_num *num);
 void	ft_setfive(t_list **stack, t_num *num);
 void	index_all(t_list **stack);
+void	radix(t_list **stack_a, t_list **stack_b);
 
 #endif
