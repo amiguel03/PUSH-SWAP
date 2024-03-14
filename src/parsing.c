@@ -6,7 +6,7 @@
 /*   By: amiguel- <amiguel-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/11 12:02:24 by amiguel-          #+#    #+#             */
-/*   Updated: 2024/03/12 12:43:23 by amiguel-         ###   ########.fr       */
+/*   Updated: 2024/03/12 14:22:42 by amiguel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,34 +31,34 @@ void	check_number(char *num)
 
 int	ft_numdup(int num, t_list **stack_a)
 {
-	t_list *temp;
+	t_list *current;
 	
 	if (stack_a == NULL)
-		temp = NULL;
+		current = NULL;
 	else
-		temp = *stack_a;
-	while (temp != NULL)
+		current = *stack_a;
+	while (current != NULL)
 	{
-		if (temp->content == num)
+		if (current->content == num)
 			return(1);
-		temp = temp->next;
+		current = current->next;
 	}
 	return (0);
 }
 
 void	ft_lstadd_back(t_list **stack_a, t_list *new)
 {
-	t_list *temp_list;
+	t_list *current_list;
 	
-	temp_list = *stack_a;
-	if (temp_list == NULL)
+	current_list = *stack_a;
+	if (current_list == NULL)
 	{
 		*stack_a = new;
 		return ;
 	}
-	while (temp_list->next != NULL)
-		temp_list = temp_list->next;
-	temp_list->next = new;
+	while (current_list->next != NULL)
+		current_list = current_list->next;
+	current_list->next = new;
 }
 
 void ft_new_node_num(int num, t_list **stack_a)
