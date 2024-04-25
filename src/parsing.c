@@ -6,7 +6,7 @@
 /*   By: amiguel- <amiguel-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/11 12:02:24 by amiguel-          #+#    #+#             */
-/*   Updated: 2024/03/12 14:22:42 by amiguel-         ###   ########.fr       */
+/*   Updated: 2024/03/18 12:27:28 by amiguel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,13 @@ void	check_number(char *num)
 	
 	i = 0;
 	if (num[i] == '-' || num[i] == '+')
+	{
+		if (num[i] == num[i + 1])
+			ft_error();
+		if (num[i + 1] == '-' || num[i + 1] == '+')
+			ft_error();
 		i++;
+	}
 	if (num[i] == '\0')
 		ft_error();
 	while(num[i] != '\0')
